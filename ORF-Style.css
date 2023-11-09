@@ -125,10 +125,9 @@ h1, h2 {
 }
 /*Bild Responsive-Image*/
 .responsive-image {
-    max-width: 100%;
-    height: auto;
-
-
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
 }
 .putin{
     max-width: 100%;
@@ -161,10 +160,16 @@ section{
 }
 
 section input{
-    width: 100%; /* Breite auf 100% setzen */
+    width: 20%; /* Breite auf 100% setzen */
     padding: 5px; /* Innenabstand */
     border: 1px solid #ccc; /* Rahmen */
     margin-bottom: 10px;
+}
+.checkboxx{
+    width: 10px;
+}
+.button{
+    width: 8%;
 }
 /*Ende*/
 .news-article{
