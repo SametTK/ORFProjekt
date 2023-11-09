@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    font-family: sans-serif;
+}
+html{
+    height:100%;
+}
+body {
+    font-family: 'Source Sans', sans-serif;
+
+    padding: 105px 20px 0;
+
+}
+/*Putin bereich*/
+
+figure{
+    text-align: center;
+}
+
+figure + blockquote + .putin + p{
+    margin: 0;
+    padding: 10px;
+}
+blockquote {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(30, 144, 255, 0.2);
+    border-left: 10px solid dodgerblue;
+    padding: 10px 30px;
+    overflow: auto;
+
+}
+blockquote img {
+    width: 15rem;
+    height: auto;
+}
+blockquote p {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
+
+blockquote cite {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+}
+
+blockquote a {
+    font-style: italic;
+    text-decoration: none;
+    color: blue;
+}
+/*NAV Menu*/
+nav{
+    position: fixed;
+    height: 80px;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    background-color:#16416B;
+    display: flex;
+    align-items: center;
+
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    height: 100%;
+    width: 100px;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: steelblue;
+}
+nav ul a{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /*Unterschrich weg machen*/
+}
+/*Mini Bar*/
+
+.mini{
+    background-color: #16416B;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+}
+
+/*Schrift*/
+h1, h2 {
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.rush-angriff{
+    display: flex;
+    justify-content: center;
+}
+
+/* Stil für die Toggle-Bar */
+.toggle-bar {
+    display: none;
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color:white;
+    top: 20px;
+    left: 20px;
+}
+/*Bild Responsive-Image*/
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+
+
+}
+.putin{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Articel*/
+
+/*Contact Seite*/
+.contact-ar{
+    background-color: steelblue;
+    padding: 5px;
+}
+.contact-ar a{
+    display: block;
+    color: white;
+    padding: 5px;
+}
+.contact-ar h1{
+     display: block;
+     color: white;
+     padding: 5px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+    background-color: #f3f3f3;
+}
+
+section input{
+    width: 100%; /* Breite auf 100% setzen */
+    padding: 5px; /* Innenabstand */
+    border: 1px solid #ccc; /* Rahmen */
+    margin-bottom: 10px;
+}
+/*Ende*/
+.news-article{
+    max-width: 100%;
+    background-color: steelblue;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article p {
+    max-width: 100%;
+}
+
+.news-text{
+    padding: 5px;
+}
+
+/*Inland article*/
+
+.inland-article{
+    padding-left:  1rem;
+}
+.ausland-article{
+    padding-left: 1rem;
+}
+
+/*Section*/
+
+section a{
+    display:block;
+    margin-bottom: 1rem;
+}
+section{
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #16416B;
+    padding: 1rem;
+}
+
+footer a{
+    color: white;
+}
+@media screen and (max-width: 750px){
+
+    .toggle-bar{
+        display: flex;
+        cursor: pointer;
+    }
+    .mainmenu{
+        display: none;
+    }
+
+    .toggle-bar:active + .mini {
+        display: flex;
+    }
+
+}
