@@ -1,16 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: medium;
-    font-family: sans-serif;
-}
+
 html{
     height:100%;
 }
 body {
     font-family: 'Source Sans', sans-serif;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: medium;
 
-    padding: 105px 20px 0;
 
 }
 /*Putin bereich*/
@@ -56,13 +56,11 @@ blockquote a {
 nav{
     position: fixed;
     height: 80px;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin: 20px;
     background-color:#16416B;
+    width: 1000px;
     display: flex;
     align-items: center;
+    margin-right: 20px;
 
 }
 nav ul{
@@ -72,6 +70,7 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    margin: 0;
 }
 nav li{
     height: 100%;
@@ -93,20 +92,14 @@ nav ul a{
 }
 /*Mini Bar*/
 
-.mini{
-    background-color: #16416B;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    text-align: center;
-}
+
 
 /*Schrift*/
 h1, h2 {
     font-weight: 900;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    display: inline;
 }
 .rush-angriff{
     display: flex;
@@ -123,6 +116,11 @@ h1, h2 {
     top: 20px;
     left: 20px;
 }
+img.orf-logo{
+    display:inline;
+}
+
+
 /*Bild Responsive-Image*/
 .responsive-image {
     max-width: 1000px;
@@ -160,16 +158,19 @@ section{
 }
 
 section input{
-    width: 20%; /* Breite auf 100% setzen */
-    padding: 5px; /* Innenabstand */
-    border: 1px solid #ccc; /* Rahmen */
-    margin-bottom: 10px;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
 }
-.checkboxx{
-    width: 10px;
+input.checkboxx{
+    margin-top: 10px;
+    width: 1rem;
+    height: 1rem;
+
 }
 .button{
-    width: 8%;
+    width: 8rem;
 }
 /*Ende*/
 .news-article{
@@ -180,6 +181,7 @@ section input{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 article p {
@@ -226,12 +228,21 @@ footer a{
         display: flex;
         cursor: pointer;
     }
-    .mainmenu{
-        display: none;
-    }
 
-    .toggle-bar:active + .mini {
+
+    .mainmenu{
+        background-color: #16416B;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        text-align: center;
+    }
+    .mainmenu.show {
         display: flex;
     }
+
+
+
 
 }
